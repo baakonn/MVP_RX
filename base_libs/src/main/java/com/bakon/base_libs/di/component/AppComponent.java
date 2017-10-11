@@ -22,6 +22,9 @@ import com.bakon.base_libs.base.delegate.AppDelegate;
 import com.bakon.base_libs.di.module.AppModule;
 import com.bakon.base_libs.di.module.ClientModule;
 import com.bakon.base_libs.di.module.GlobalConfigModule;
+import com.bakon.base_libs.http.imageloader.ImageLoader;
+import com.bakon.base_libs.integration.AppManager;
+import com.bakon.base_libs.integration.IRepositoryManager;
 import com.google.gson.Gson;
 
 import java.io.File;
@@ -30,6 +33,8 @@ import java.util.Map;
 import javax.inject.Singleton;
 
 import dagger.Component;
+import me.jessyan.rxerrorhandler.core.RxErrorHandler;
+import okhttp3.OkHttpClient;
 
 /**
  * ================================================

@@ -1,4 +1,8 @@
 apply plugin: 'com.android.application'
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':base_libs')
+}
 
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
@@ -19,7 +23,4 @@ android {
     }
 }
 
-dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':base_libs')
-}
+
